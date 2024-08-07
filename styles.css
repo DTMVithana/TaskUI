@@ -1,0 +1,180 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+}
+
+/* Header styles */
+header.jumbotron {
+  background-image: url("./images/product1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navbar styles */
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Section styles */
+section {
+  padding: 3rem 0;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn {
+  margin-right: 0.5rem;
+}
+
+/* Collaboration section styles */
+.collaboration-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.collaboration-section .card {
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.collaboration-section .card-body {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.collaboration-section .card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.collaboration-section .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.collaboration-section .countdown {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.collaboration-section .btn {
+  margin: 10px 5px;
+}
+
+.collaboration-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.collaboration-section .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+/* Countdown timer styles */
+.countdown-timer {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  header.jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  header.jumbotron p.lead {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .collaboration-section .card {
+    flex-direction: column;
+  }
+
+  .collaboration-section .card-body {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+}
